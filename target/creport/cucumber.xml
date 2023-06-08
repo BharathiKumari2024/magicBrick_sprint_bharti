@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="84.553" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="ProductDetails" name="Verify Contact Details functionality with valid data - Example #1.1" time="42.873">
+<system-out><![CDATA[
+Given chrome is opened and magicbricks app is opened........................passed
+When User enters "Kolkata" in AddMore field.................................passed
+And User clicks on Location.................................................passed
+Then User navigates to ProductList page.....................................passed
+When User clicks on any product.............................................passed
+Then User navigates to ProductDetails page..................................passed
+Then ProductDetails fields are visible to user..............................passed
+Then User is able to click on Download brochure button......................passed
+And User enters Name "Bharathi" Email "barumoonstone@gmail.com" Mobile "8825744851".passed
+Then User clicks on Get submit button.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ProductDetails" name="Verify Contact Details functionality with invalid data - Example #1.1" time="41.39">
+<system-out><![CDATA[
+Given chrome is opened and magicbricks app is opened........................passed
+When User enters "Kolkata" in AddMore field.................................passed
+And User clicks on Location.................................................passed
+Then User navigates to ProductList page.....................................passed
+When User clicks on any product.............................................passed
+Then User navigates to ProductDetails page..................................passed
+Then ProductDetails fields are visible to user..............................passed
+Then User is able to click on Download brochure button......................passed
+And User enters Name "Bharathi" Email "$$$$$$$$$$$$$$$$$$$" Mobile "8825744851".passed
+Then User gets invalid data message.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
